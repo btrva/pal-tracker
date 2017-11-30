@@ -2,11 +2,13 @@ package io.pivotal.pal.tracker;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 import java.util.HashMap;
 
 @RestController
+@RequestMapping("/lab")
 public class EnvController {
     private String port, mem_limit, cf_inst_indx, cf_inst_addr;
 
